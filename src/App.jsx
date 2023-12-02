@@ -8,23 +8,9 @@ import {
 import scroll from './animation/scroll';
 import { useEffect } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
+import { Home } from './pages';
 
 const Root = () => {
-  const { pathname } = useLocation();
-
-  // const noLayoutRoutes = ['/login', '/register'];
-
-  const isNoLayout = noLayoutRoutes.some((nlr) => nlr === pathname);
-
-  if (isNoLayout) {
-    return (
-      <div>
-        <ScrollRestoration />
-        <Outlet />
-      </div>
-    );
-  }
-
   return (
     <div>
       <ScrollRestoration />
@@ -40,7 +26,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '*',
-        element: <$404 />,
+        element: 'Page not found',
       },
       {
         index: true,

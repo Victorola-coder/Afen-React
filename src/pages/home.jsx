@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
-import { Button, Input } from './components';
+import { Button, Input } from '../components';
 export default function Home() {
   return (
     <>
