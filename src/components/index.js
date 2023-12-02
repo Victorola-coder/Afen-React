@@ -1,3 +1,3 @@
-export { defualt as Form } from './form';
-export { defualt as Input } from './input';
-export { defualt as Button } from './button';
+export { default as Form } from './form';
+export { default as Input } from './input';
+export { default as Button } from './button';

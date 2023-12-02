@@ -1,4 +1,6 @@
-import { Button } from './components';
+import { Link, NavLink } from 'react-router-dom';
+
+import { Button, Input } from './components';
 export default function Home() {
   return (
     <>
@@ -19,7 +21,7 @@ const Hero = () => {
       <section className='lg:pl-[160px] lg:pb-[195px] lg:pt-[72px]  bg-hero bg-no-repea relative'>
         <header>
           <nav className=''>
-            <Link href='/'>
+            <Link to='/'>
               <img
                 src='/images/afen.png'
                 alt='logoIcon'
