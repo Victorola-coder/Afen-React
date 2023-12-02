@@ -13,6 +13,10 @@ export default {
         grey: '#3d3d3d',
         complement: '0fbee4',
       },
+      fontFamily: {
+        sat: ['Satoshi', 'sans-serif'],
+        coc: ['Cocogoose Classic Trial', 'sans-serif'],
+      },
     },
   },
   plugins: [],
