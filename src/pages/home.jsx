@@ -67,7 +67,12 @@ function VideoSection() {
   return (
     <section className='px-[100px] flex flex-row gap-[106px] bg-white lg:py-[120px]'>
       <div className='bg-[#C4C4C4] w-[702px] h-[496px]'>
-        <iframe src="https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        <iframe
+          src='https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview'
+          width='100%'
+          height='100%'
+          allow='autoplay'
+        ></iframe>
       </div>
       <div className='pr-[05px]'>
         <h3 className='text-primary font-[850] text-[64px] font-coc lg:leading-[89.6px] uppercase  '>
