@@ -119,10 +119,13 @@ function Ecosystem() {
               className=''
             />
           </figure>
-          <p className='text-[#A1A1AA] leading-[42px] font-normal text-[28px] font-sat  lg:max-w-[613px] '>
+          <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
             Immerse yourself in the ever-evolving landscape of emerging
             technologies through curated trainings, news updates and insightful
             market research.
+          </p>
+          <p className='text-normal leading-[42px] max-qw-'>
+            Be one of the pioneers to receive our newest updates.
           </p>
           <form
             onSubmit={handleSubmit}
