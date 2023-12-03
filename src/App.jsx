@@ -38,7 +38,7 @@ const router = createBrowserRouter([
 
 function App() {
   useEffect(() => {
-    // scroll();
+    scroll();
   }, []);
 
   return (
