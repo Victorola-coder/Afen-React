@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { Button, Input } from '../components';
+import { IgIcon, LinkedinIcon, XIcon, YtIcon } from '../components/svg';
 export default function Home() {
   return (
     <>
@@ -10,6 +11,8 @@ export default function Home() {
         <Ecosystem />
         <AfenToken />
         <AfenLaunchPad />
+        <Portfolio />
+        <Footer />
       </main>
     </>
   );
@@ -153,7 +156,7 @@ const AfenToken = () => {
 
   return (
     <div className='bg-white'>
-      <section className='w-full px-[160px] py-[120px] max-w-max mx-auto grid grid-cols-2 gap-[121px]'>
+      <section className='w-full px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
         <figure>
           <img src='/images/afentoken.svg' alt="" className='w-full' />
         </figure>
@@ -162,10 +165,10 @@ const AfenToken = () => {
             <h1 className='text-primary font-extrabold text-[40px]'>$AFEN TOKEN</h1>
             <p className='text-[28px] leading-[42px] text-grey'>The native $AFEN token is the heartbeat of our ecosystem. With a comprehensive tokenomics structure, we offer token holders the chance to stake and earn rewards.</p>
             <div className='flex gap-[16px]'>
-              <button className='px-[52px] py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
+              <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
                 Trade $AFEN
               </button>
-              <button className='px-[52px] py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
+              <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
                 Stake $AFEN - Coming Soon
               </button>
             </div>
@@ -180,7 +183,7 @@ const AfenLaunchPad = () => {
 
   return (
     <div className='bg-white'>
-      <section className='w-full px-[160px] py-[120px] max-w-max mx-auto grid grid-cols-2 gap-[121px]'>
+      <section className='w-full px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
         <div className='flex'>
           <div className='my-auto flex flex-col gap-[32px]'>
             <header>
@@ -189,7 +192,7 @@ const AfenLaunchPad = () => {
             </header>
             <p className='text-[28px] leading-[42px] text-grey'>AFEN serves as a dynamic launchpad, dedicated to propelling innovative startups towards success by offering a comprehensive ecosystem of cutting-edge infrastructure, advisory services, and a vibrant community.</p>
             <div className='flex gap-[16px]'>
-              <button className='px-[52px] py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
+              <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
                 Apply now
               </button>
             </div>
@@ -200,5 +203,40 @@ const AfenLaunchPad = () => {
         </figure>
       </section>
     </div>
+  )
+}
+
+
+const Portfolio = () => {
+
+  return (
+    <div className='bg-white'>
+      <section className='py-[96px] px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid place-items-center text-center gap-[40px]'>
+        <header>
+          <h1 className='text-[#222222] text-[40px] leading-[60px] font-bold'>Our portfolio highlights</h1>
+        </header>
+        <div className='flex gap-10 flex-wrap justify-around'>
+          <img src="/images/DigiCase-logo.svg" alt="DigiCase" />
+          <img src="/images/Creos-logo.svg" alt="Creos" />
+          <img src="/images/PouchFi-logo.svg" alt="PouchFi" />
+          <img src="/images/DigiGold-logo.svg" alt="DigiGold" />
+        </div>
+      </section>
+    </div>
+  )
+}
+
+const Footer = () => {
+
+  return (
+    <footer className='py-[75px] px-[20px] lg:px-[160px] grid place-items-center text-center gap-[40px]'>
+      <div className='flex gap-[33px]'>
+        <XIcon />
+        <IgIcon />
+        <YtIcon />
+        <LinkedinIcon />
+      </div>
+      <h3 className='text-white text-[20px]'>Ⓒ AFEN | All rights reserved 2021 - 2023</h3>
+    </footer>
   )
 }
