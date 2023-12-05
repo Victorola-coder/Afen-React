@@ -76,3 +76,12 @@ html.lenis {
 .swiper-wrapper {
   height: max-content !important;
 }
+
+#mc_embed_signup{
+  width: 100% !important;
+  max-width: 600px;
+}
+
+.mc-field-group input{
+  color: black !important;
+}
