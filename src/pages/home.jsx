@@ -70,12 +70,12 @@ const Hero = () => {
 
 function VideoSection() {
   return (
-    <section className='px-[100px] flex flex-row gap-[106px] bg-white lg:py-[120px]'>
-      <div className='bg-[#C4C4C4] w-[702px] h-[496px]'>
+    <section className='px-[20px] lg:px-[100px] py-[20px] lg:py-[120px] grid lg:grid-cols-2 gap-[20px] lg:gap-[106px] bg-white'>
+      <div className='bg-[#C4C4C4] h-[353px] lg:h-[496px]'>
         <iframe src="https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview" width="100%" height="100%" allow="autoplay"></iframe>
       </div>
       <div className='pr-[05px]'>
-        <h3 className='text-primary font-[850] text-[64px] font-coc lg:leading-[89.6px] uppercase  '>
+        <h3 className='text-primary font-[850] text-[32px] lg:text-[64px] font-coc lg:leading-[89.6px] uppercase  '>
           About AFEN
         </h3>
         <p className='text-grey font-normal font-sat lg:text-[24px] lg:max-w-[604px] lg:leading-[36px]'>
