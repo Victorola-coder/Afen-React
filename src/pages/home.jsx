@@ -24,7 +24,7 @@ const Hero = () => {
   }
   return (
     <>
-      <section className='lg:pl-[160px] lg:pb-[195px] lg:pt-[72px]  bg-hero bg-no-repea relative'>
+      <section className='pl-[20px] pt-[10px] lg:pl-[160px] lg:pb-[195px] lg:pt-[72px]  bg-hero bg-no-repea relative'>
         <header>
           <nav className=''>
             <Link to='/'>
@@ -32,7 +32,7 @@ const Hero = () => {
                 src='/images/afen.png'
                 alt='logoIcon'
                 draggable={false}
-                className='transition-all duration-300 active:scale-95'
+                className='w-[103px] h-[40px] md:w-[200px] md:h-[80px] transition-all duration-300 active:scale-95'
               />
             </Link>
           </nav>
@@ -40,25 +40,25 @@ const Hero = () => {
         <div className='flex flex-col items-start'>
           <h3
             style={{ fontFamily: 'Cocogoose Classic Trial, sans-serif' }}
-            className='mt-[250px] font-extrabold lg:leading-[89.6px] text-secondary lg:max-w-[627px] lg:text-[64px]   '
+            className='mt-[191px] max-w-[317px]  text-[32px] leading-[44.8px] font-[850px] lg:mt-[250px] lg:leading-[89.6px] text-secondary lg:max-w-[627px] lg:text-[64px]   '
           >
             Building the Future, One Block at a Time…
           </h3>
-          <p className='text-tet font-normal lg:leading-[42px] lg:text-[28px] max-w-[692px] mt-4'>
+          <p className='text-tet font-normal font-sat leading-[30px] text-[20px] max-w-[353px] lg:leading-[42px] lg:text-[28px] md:max-w-[692px] mt-4'>
             At AFEN, we are dedicated to creating a dynamic global ecosystem
             that fosters disruptive innovation and community advancement.
           </p>
-          <p className='text-tet font-normal lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
+          <p className='text-tet font-normal leading-[36px] text-[20px] max-w-[353px] lg:leading-[42px] lg:text-[28px] lg:max-w-[442px] mt-10'>
             Be one of the first to receive our newest updates.
           </p>
           <form
             onSubmit={handleSubmit}
-            className='flex flex-row gap-[14px] items-center mt-4'
+            className='flex flex-col items-start md:flex md:flex-row gap-[14px] lg:items-center mt-4'
           >
             <fieldset>
               <Input placeholder='Type your email here' type='email' />
             </fieldset>
-            <Button className='rounded-[8px] lg:px-[26px] lg:py-4'>
+            <Button className='font-medium rounded-[8px] !w-[127px] lg:!w-[171px] px-[26px] py-4'>
               Join now !!
             </Button>
           </form>
@@ -70,7 +70,7 @@ const Hero = () => {
 
 function VideoSection() {
   return (
-    <section className='px-[100px] flex flex-row gap-[106px] bg-white lg:py-[120px]'>
+    <section className='bg-white lg:px-[100px] lg:flex lg:flex-row lg:gap-[106px] lg:lg:py-[120px]'>
       <div className='bg-[#C4C4C4] w-[702px] h-[496px]'>
         <iframe
           src='https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview'
@@ -177,7 +177,7 @@ const AfenToken = () => {
               <button className='whitespace-nowrap  px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
                 Trade $AFEN
               </button>
-              <button className=' whitespace-nowrap first-letter:px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
+              <button className=' whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
                 Stake $AFEN - Coming Soon
               </button>
             </div>
@@ -209,9 +209,15 @@ const AfenLaunchPad = () => {
               vibrant community.
             </p>
             <div className='flex gap-[16px]'>
-              <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
-                Apply now
-              </button>
+              <Link
+                to='https://forms.gle/aCNkby9K8nY2i5KU8'
+                rel='noreferrer noopener'
+                target='_blank'
+              >
+                <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
+                  Apply now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -233,10 +239,58 @@ const Portfolio = () => {
           </h1>
         </header>
         <div className='flex gap-10 flex-wrap justify-around'>
-          <img src='/images/DigiCase-logo.svg' alt='DigiCase' />
-          <img src='/images/Creos-logo.svg' alt='Creos' />
-          <img src='/images/PouchFi-logo.svg' alt='PouchFi' />
-          <img src='/images/DigiGold-logo.svg' alt='DigiGold' />
+          <Link
+            to='https://www.digicask.finance'
+            target='_blank'
+            rel='noreferer noopener'
+          >
+            <figure>
+              <img
+                className=''
+                draggable={false}
+                src='/images/DigiCase-logo.svg'
+                alt='DigiCase'
+              />
+            </figure>
+          </Link>
+          <Link
+            to='https://www.creosxyz.com'
+            target='_blank'
+            rel='noreferer noopener'
+          >
+            <figure>
+              <img
+                className=''
+                draggable={false}
+                src='/images/Creos-logo.svg'
+                alt='Creos'
+              />
+            </figure>
+          </Link>
+          <Link to='' target='_blank' rel='noreferer noopener'>
+            <figure>
+              <img
+                className='https://pouchfi.io'
+                draggable={false}
+                src='/images/PouchFi-logo.svg'
+                alt='PouchFi'
+              />
+            </figure>
+          </Link>
+          <Link
+            to='https://www.digigold.finance'
+            rel='noreferer noopener'
+            target='_bkank'
+          >
+            <figure>
+              <img
+                className=''
+                draggable={false}
+                src='/images/DigiGold-logo.svg'
+                alt='DigiGold'
+              />
+            </figure>
+          </Link>
         </div>
       </section>
     </div>
@@ -247,13 +301,30 @@ const Footer = () => {
   return (
     <footer className='py-[75px] px-[20px] lg:px-[160px] grid place-items-center text-center gap-[40px]'>
       <div className='flex gap-[33px]'>
-        <XIcon />
-        <IgIcon />
-        <YtIcon />
-        <LinkedinIcon />
+        <Link to=''>
+          <figure>
+            <XIcon />
+          </figure>
+        </Link>
+        <Link>
+          <figure>
+            <IgIcon />
+          </figure>
+        </Link>
+        <Link>
+          <figure>
+            <YtIcon />
+          </figure>
+        </Link>
+        <Link>
+          <figure>
+            <LinkedinIcon />
+          </figure>
+        </Link>
       </div>
       <h3 className='text-white text-[20px]'>
-        Ⓒ AFEN | All rights reserved 2021 - 2023
+        Ⓒ AFEN | All rights reserved 2021 -{' '}
+        <span> {new Date().getFullYear()}</span>
       </h3>
     </footer>
   );
