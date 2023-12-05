@@ -257,14 +257,14 @@ const AfenLaunchPad = () => {
         <div className='flex'>
           <div className='my-auto flex flex-col gap-[32px]'>
             <header>
-              <h1 className='text-primary font-extrabold text-[40px]'>
+              <h1 className='text-primary font-extrabold text-[32px] lg:text-[40px]'>
                 Apply to AFEN Launchpad
               </h1>
-              <p className='text-[#AAAAAA] text-[32px] leding-[48px]'>
+              <p className='text-[#AAAAAA] text-[20px] lg:text-[32px] leding-[48px]'>
                 Nurturing Innovation, Empowering Success…
               </p>
             </header>
-            <p className='text-[28px] leading-[42px] text-grey'>
+            <p className='text-[20px] lg:text-[28px] leading-[42px] text-grey'>
               AFEN serves as a dynamic launchpad, dedicated to propelling
               innovative startups towards success by offering a comprehensive
               ecosystem of cutting-edge infrastructure, advisory services, and a
