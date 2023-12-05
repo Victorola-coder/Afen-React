@@ -102,7 +102,7 @@ function Ecosystem() {
       <h3 className='text-secondary text-[32px] leading-[44.8px] font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
         AFEN Ecosystem
       </h3>
-      <p className='font-normal text-white text-[20px] max-w-[353px] leading-[30px] lg:leading-[48px] md:text-[32px] font-sat  lg:max-w-[1194px]'>
+      <p className='font-normal text-white text-[20px] max-w-[353px] leading-[30px] lg:leading-[48px] md:text-[32px] font-sat lg:max-w-[1194px] lg:pb-[60px] pb-[20px]'>
         Envision a future where technology transforms lives, innovation is
         boundless, and economic prosperity is within reach for everyone.
       </p>
@@ -189,17 +189,17 @@ function Ecosystem() {
             </form>
           </div>
         </div> */}
-        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:py-[128px] flex flex-row items-center lg:mt-[60px] lg:gap-[133px]'>
+        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:py-[128px] flex flex-col lg:flex-row lg:items-center gap-[23px] lg:gap-[133px]'>
           <div>
-           <h1 className='text-[#FFD92D] font-bold text-[48px] mb-[20px]'>METACITTI</h1>
+           <h1 className='text-[#FFD92D] font-bold text-[32px] lg:text-[48px] mb-[20px]'>METACITTI</h1>
             <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] mb-[30px]'>
             Be one of the pioneers to receive our newest updates.
             </p>
-            <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary text-[24px] rounded-[8px] font-semibold'>
+            <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary lg:text-[24px] rounded-[8px] font-semibold'>
                 Comming Soon
               </button>
           </div>
-          <div>
+          <div className='order-first lg:order-last'>
             <figure>
               <img
                 src='/images/metacitti.svg'
