@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className='px-[20px] pt-[69px] pb-[81px] lg:pl-[160px] lg:pb-[195px] lg:pt-[72px] bg-[url(/images/hero.png)] bg-hero bg-no-repeat relative'>
+      <section className='px-[20px] pt-[69px] pb-[81px] lg:pl-[160px] lg:pb-[195px] lg:pt-[72px] bg-center bg-cover bg-[url(/images/hero.png)] bg-hero bg-no-repeat relative'>
         <header>
           <nav className=''>
             <Link to='/'>
@@ -65,9 +65,9 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='flex flex-col lg:flex-row gap-[14px] mt-4'
+      className='flex flex-col lg:flex-row gap-[14px] mt-4 w-full max-w-[550px]'
     >
-      <fieldset>
+      <fieldset className='flex-1'>
         <Input placeholder='Type your email here' type='email' />
       </fieldset>
       <Button className='rounded-[8px] px-[26px] py-[16px] lg:py-4 max-w-max'>
@@ -207,7 +207,7 @@ function Ecosystem() {
 const AfenToken = () => {
   return (
     <div className='bg-white'>
-      <section className='w-full px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
+      <section className='w-full px-[20px] lg:px-[160px] py-[40px] lg:py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
         <figure>
           <img
             src='/images/afentoken.svg'
@@ -226,10 +226,10 @@ const AfenToken = () => {
               chance to stake and earn rewards.
             </p>
             <div className='flex flex-col lg:flex-row gap-[16px]'>
-              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px] max-w-max'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white lg:text-[24px] rounded-[8px] max-w-max'>
                 Trade $AFEN
               </button>
-              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px] max-w-max'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white lg:text-[24px] rounded-[8px] max-w-max'>
                 Stake $AFEN - Coming Soon
               </button>
             </div>
@@ -243,7 +243,7 @@ const AfenToken = () => {
 const AfenLaunchPad = () => {
   return (
     <div className='bg-white'>
-      <section className='w-full px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
+      <section className='w-full px-[20px] lg:px-[160px] py-[40px] lg:py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
         <div className='flex'>
           <div className='my-auto flex flex-col gap-[32px]'>
             <header>
@@ -284,7 +284,7 @@ const AfenLaunchPad = () => {
 const Portfolio = () => {
   return (
     <div className='bg-white'>
-      <section className='py-[96px] px-[20px] lg:px-[160px] xlpy-[120px] max-w-max mx-auto grid place-items-center text-center gap-[40px]'>
+      <section className='py-[96px] px-[20px] lg:px-[160px] py-[40px] lg:py-[120px] max-w-max mx-auto grid place-items-center text-center gap-[40px]'>
         <header>
           <h1 className='text-[#222222] text-[40px] leading-[60px] font-bold'>
             Our portfolio highlights
@@ -352,7 +352,7 @@ const Portfolio = () => {
 const Footer = () => {
   return (
     <footer className='py-[75px] px-[20px] lg:px-[160px] grid place-items-center text-center gap-[40px]'>
-      <div className='flex gap-[33px]'>
+      <div className='flex flex-wrap justify-around gap-[33px]'>
         <Link to=''>
           <figure>
             <XIcon />
