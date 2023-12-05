@@ -172,7 +172,7 @@ function Ecosystem() {
               technologies through curated trainings, news updates and
               insightful market research.
             </p>
-            <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
+            <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10 pb-5'>
               Be one of the first to receive our newest updates.
             </p>
             <Link
