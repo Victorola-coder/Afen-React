@@ -216,7 +216,7 @@ const AfenToken = () => {
           />
         </figure>
         <div className='flex'>
-          <div className='my-auto flex flex-col lg:gap-[24px]'>
+          <div className='my-auto flex flex-col gap-[24px]'>
             <h1 className='text-primary font-extrabold text-[32px] lg:text-[40px]'>
               $AFEN TOKEN
             </h1>
@@ -225,11 +225,11 @@ const AfenToken = () => {
               comprehensive tokenomics structure, we offer token holders the
               chance to stake and earn rewards.
             </p>
-            <div className='flex gap-[16px]'>
-              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
+            <div className='flex flex-col lg:flex-row gap-[16px]'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px] max-w-max'>
                 Trade $AFEN
               </button>
-              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px] max-w-max'>
                 Stake $AFEN - Coming Soon
               </button>
             </div>
