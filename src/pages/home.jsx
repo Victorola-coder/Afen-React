@@ -107,7 +107,7 @@ function Ecosystem() {
         boundless, and economic prosperity is within reach for everyone.
       </p>
       <div className='grid gap-[60px]'>
-        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[22px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
+        {/* <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[22px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
           <div>
             <figure>
               <img
@@ -152,7 +152,7 @@ function Ecosystem() {
           <div>
             <figure>
               <img
-                src='/images/bloom illustt.png'
+                src='/images/nifty.png'
                 alt='bloom illustt'
                 draggable={false}
                 className=''
@@ -188,7 +188,7 @@ function Ecosystem() {
               </Button>
             </form>
           </div>
-        </div>
+        </div> */}
         <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:py-[128px] flex flex-row items-center lg:mt-[60px] lg:gap-[133px]'>
           <div>
            <h1 className='text-[#FFD92D] font-bold text-[48px] mb-[20px]'>METACITTI</h1>
