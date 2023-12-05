@@ -7,7 +7,7 @@ export default function Button(props) {
     <button
       disabled={loading || disabled}
       className={clsx(
-        'w-full grid place-items-center text-primary bg-secondary text-[22px] disabled:cursor-not-allowed disabled:bg-opacity-60 active:scale-95 transition-all duration-200',
+        'w-full whitespace-nowrap grid place-items-center text-[15px] text-primary bg-secondary lg:text-[24px] disabled:cursor-not-allowed disabled:bg-opacity-60 active:scale-95 transition-all duration-200',
         className
       )}
       {...prop}
