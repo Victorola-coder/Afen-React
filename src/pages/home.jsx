@@ -19,7 +19,6 @@ export default function Home() {
 }
 
 const Hero = () => {
-
   return (
     <>
       <section className='px-[20px] pt-[69px] pb-[81px] lg:pl-[160px] lg:pb-[195px] lg:pt-[72px] bg-[url(/images/hero.png)] bg-hero bg-no-repeat relative'>
@@ -30,7 +29,7 @@ const Hero = () => {
                 src='/images/afen.png'
                 alt='logoIcon'
                 draggable={false}
-                className='w-[103px] h-[40px w-[103px] lg:w-[205px] lg:h-[80px] transition-all duration-300 active:scale-95'
+                className='w-[103px] h-[40px] lg:w-[205px] lg:h-[80px] transition-all duration-300 active:scale-95'
               />
             </Link>
           </nav>
@@ -57,7 +56,6 @@ const Hero = () => {
 };
 
 const Form = () => {
-
   function handleSubmit(e) {
     e.preventDefault();
   }
@@ -74,14 +72,19 @@ const Form = () => {
         Join now !!
       </Button>
     </form>
-  )
-}
+  );
+};
 
 function VideoSection() {
   return (
     <section className='px-[20px] lg:px-[100px] py-[20px] lg:py-[120px] grid lg:grid-cols-2 gap-[20px] lg:gap-[106px] bg-white'>
       <div className='bg-[#C4C4C4] h-[353px] lg:h-[496px]'>
-        <iframe src="https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        <iframe
+          src='https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview'
+          width='100%'
+          height='100%'
+          allow='autoplay'
+        ></iframe>
       </div>
       <div className='pr-[05px]'>
         <h3 className='text-primary font-[850] text-[32px] lg:text-[64px] font-coc lg:leading-[89.6px] uppercase  '>
@@ -103,7 +106,6 @@ function VideoSection() {
 }
 
 function Ecosystem() {
-
   return (
     <section className='px-[20px] py-[40px] lg:px-[160px] lg:py-[120px]'>
       <h3 className='text-secondary text-[32px] leading-[44.8px] font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
@@ -136,11 +138,11 @@ function Ecosystem() {
             </figure>
             <p className='text-[#A1A1AA] leading-[30px] lg:leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
               Immerse yourself in the ever-evolving landscape of emerging
-              technologies through curated trainings, news updates and insightful
-              market research.
+              technologies through curated trainings, news updates and
+              insightful market research.
             </p>
-            <p className='text-normal leading-[42px] max-qw-'>
-              Be one of the pioneers to receive our newest updates.
+            <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
+              Be one of the first to receive our newest updates.
             </p>
             <Form />
           </div>
@@ -167,20 +169,28 @@ function Ecosystem() {
             </figure>
             <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
               Immerse yourself in the ever-evolving landscape of emerging
-              technologies through curated trainings, news updates and insightful
-              market research.
+              technologies through curated trainings, news updates and
+              insightful market research.
             </p>
-            <p className='text-normal leading-[30px] lg:leading-[42px] pb-2'>
-              Be one of the pioneers to receive our newest updates.
+            <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
+              Be one of the first to receive our newest updates.
             </p>
-            <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary lg:text-[24px] rounded-[8px] font-semibold'>
-              More info
-            </button>
+            <Link
+              to='https://t.co/Qg3utZwFEz'
+              target='_blank'
+              rel='noreferer noopener'
+            >
+              <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary lg:text-[24px] rounded-[8px] font-semibold'>
+                More info
+              </button>
+            </Link>
           </div>
         </div>
         <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:py-[128px] flex flex-col lg:flex-row lg:items-center gap-[23px] lg:gap-[133px]'>
           <div>
-            <h1 className='text-[#FFD92D] font-bold text-[32px] lg:text-[48px] mb-[20px]'>METACITTI</h1>
+            <h1 className='text-[#FFD92D] font-bold text-[32px] lg:text-[48px] mb-[20px]'>
+              METACITTI
+            </h1>
             <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] mb-[30px]'>
               Be one of the pioneers to receive our newest updates.
             </p>
@@ -279,7 +289,7 @@ const AfenLaunchPad = () => {
       </section>
     </div>
   );
-}
+};
 
 const Portfolio = () => {
   return (
@@ -319,10 +329,14 @@ const Portfolio = () => {
               />
             </figure>
           </Link>
-          <Link to='' target='_blank' rel='noreferer noopener'>
+          <Link
+            to='https://pouchfi.io'
+            target='_blank'
+            rel='noreferer noopener'
+          >
             <figure>
               <img
-                className='https://pouchfi.io'
+                className=''
                 draggable={false}
                 src='/images/PouchFi-logo.svg'
                 alt='PouchFi'
@@ -346,29 +360,45 @@ const Portfolio = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
 const Footer = () => {
   return (
     <footer className='py-[75px] px-[20px] lg:px-[160px] grid place-items-center text-center gap-[40px]'>
       <div className='flex gap-[33px]'>
-        <Link to=''>
+        <Link
+          to='https://x.com/Afenblockchain?t=mwb_s5VjvjdlJs3_YnIFvw&s=09'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <figure>
             <XIcon />
           </figure>
         </Link>
-        <Link>
+        <Link
+          to='https://instagram.com/afenblockchain?igshid=NzZlODBkYWE4Ng'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <figure>
             <IgIcon />
           </figure>
         </Link>
-        <Link>
+        <Link
+          to='https://youtube.com/@AFENBLOCKCHAIN1?si=4MHApTa-aTH6jmL0'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <figure>
             <YtIcon />
           </figure>
         </Link>
-        <Link>
+        <Link
+          to='https://www.linkedin.com/company/afen-blockchain-group/'
+          rel='noreferer noopener'
+          target='_blank'
+        >
           <figure>
             <LinkedinIcon />
           </figure>
@@ -380,4 +410,4 @@ const Footer = () => {
       </h3>
     </footer>
   );
-}
+};
