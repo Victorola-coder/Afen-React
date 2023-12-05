@@ -24,7 +24,7 @@ const Hero = () => {
   }
   return (
     <>
-      <section className='lg:pl-[160px] lg:pb-[195px] lg:pt-[72px]  bg-hero bg-no-repea relative'>
+      <section className='px-[20px] pt-[69px] pb-[81px] lg:pl-[160px] lg:pb-[195px] lg:pt-[72px] bg-[url(/images/hero.png)] bg-hero bg-no-repeat relative'>
         <header>
           <nav className=''>
             <Link to='/'>
@@ -32,7 +32,7 @@ const Hero = () => {
                 src='/images/afen.png'
                 alt='logoIcon'
                 draggable={false}
-                className='transition-all duration-300 active:scale-95'
+                className='w-[103px] h-[40px w-[103px] lg:w-[205px] lg:h-[80px] transition-all duration-300 active:scale-95'
               />
             </Link>
           </nav>
@@ -40,25 +40,25 @@ const Hero = () => {
         <div className='flex flex-col items-start'>
           <h3
             style={{ fontFamily: 'Cocogoose Classic Trial, sans-serif' }}
-            className='mt-[250px] font-extrabold lg:leading-[89.6px] text-secondary lg:max-w-[627px] lg:text-[64px]   '
+            className='mt-[191px] lg:mt-[250px] font-extrabold lg:leading-[89.6px] text-secondary lg:max-w-[627px] lg:text-[64px] text-[32px]'
           >
             Building the Future, One Block at a Time…
           </h3>
-          <p className='text-tet font-normal lg:leading-[42px] lg:text-[28px] max-w-[692px] mt-4'>
+          <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[692px] mt-4'>
             At AFEN, we are dedicated to creating a dynamic global ecosystem
             that fosters disruptive innovation and community advancement.
           </p>
-          <p className='text-tet font-normal lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
+          <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
             Be one of the first to receive our newest updates.
           </p>
           <form
             onSubmit={handleSubmit}
-            className='flex flex-row gap-[14px] items-center mt-4'
+            className='flex flex-col lg:flex-row gap-[14px] mt-4'
           >
             <fieldset>
               <Input placeholder='Type your email here' type='email' />
             </fieldset>
-            <Button className='rounded-[8px] lg:px-[26px] lg:py-4'>
+            <Button className='rounded-[8px] px-[26px] py-[16px] lg:py-4 max-w-max'>
               Join now !!
             </Button>
           </form>
@@ -106,45 +106,109 @@ function Ecosystem() {
         Envision a future where technology transforms lives, innovation is
         boundless, and economic prosperity is within reach for everyone.
       </p>
-      <div className='rounded-[12px] border-solid border border-white lg:pr-[91px] lg:pl-[103px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
-        <div>
-          <figure>
-            <img
-              src='/images/bloom illustt.png'
-              alt='bloom illustt'
-              draggable={false}
-              className=''
-            />
-          </figure>
+      <div className='grid gap-[60px]'>
+        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[22px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
+          <div>
+            <figure>
+              <img
+                src='/images/bloom illustt.png'
+                alt='bloom illustt'
+                draggable={false}
+                className=''
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src='/images/bloom.png'
+                alt='bloom logo'
+                draggable={false}
+                className=''
+              />
+            </figure>
+            <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
+              Immerse yourself in the ever-evolving landscape of emerging
+              technologies through curated trainings, news updates and insightful
+              market research.
+            </p>
+            <p className='text-normal leading-[42px] max-qw-'>
+              Be one of the pioneers to receive our newest updates.
+            </p>
+            <form
+              onSubmit={handleSubmit}
+              className='flex flex-row gap-[14px] items-center mt-4'
+            >
+              <fieldset>
+                <Input placeholder='Type your email here' type='email' />
+              </fieldset>
+              <Button className=' whitespace-nowrap rounded-[8px] lg:px-[26px] lg:py-4'>
+                subscribe
+              </Button>
+            </form>
+          </div>
         </div>
-        <div>
-          <figure>
-            <img
-              src='/images/bloom.png'
-              alt='bloom logo'
-              draggable={false}
-              className=''
-            />
-          </figure>
-          <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
-            Immerse yourself in the ever-evolving landscape of emerging
-            technologies through curated trainings, news updates and insightful
-            market research.
-          </p>
-          <p className='text-normal leading-[42px] max-qw-'>
+        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
+          <div>
+            <figure>
+              <img
+                src='/images/bloom illustt.png'
+                alt='bloom illustt'
+                draggable={false}
+                className=''
+              />
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img
+                src='/images/bloom.png'
+                alt='bloom logo'
+                draggable={false}
+                className=''
+              />
+            </figure>
+            <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
+              Immerse yourself in the ever-evolving landscape of emerging
+              technologies through curated trainings, news updates and insightful
+              market research.
+            </p>
+            <p className='text-normal leading-[42px] max-qw-'>
+              Be one of the pioneers to receive our newest updates.
+            </p>
+            <form
+              onSubmit={handleSubmit}
+              className='flex flex-row gap-[14px] items-center mt-4'
+            >
+              <fieldset>
+                <Input placeholder='Type your email here' type='email' />
+              </fieldset>
+              <Button className=' whitespace-nowrap rounded-[8px] lg:px-[26px] lg:py-4'>
+                subscribe
+              </Button>
+            </form>
+          </div>
+        </div>
+        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:py-[128px] flex flex-row items-center lg:mt-[60px] lg:gap-[133px]'>
+          <div>
+           <h1 className='text-[#FFD92D] font-bold text-[48px] mb-[20px]'>METACITTI</h1>
+            <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] mb-[30px]'>
             Be one of the pioneers to receive our newest updates.
-          </p>
-          <form
-            onSubmit={handleSubmit}
-            className='flex flex-row gap-[14px] items-center mt-4'
-          >
-            <fieldset>
-              <Input placeholder='Type your email here' type='email' />
-            </fieldset>
-            <Button className=' whitespace-nowrap rounded-[8px] lg:px-[26px] lg:py-4'>
-              subscribe
-            </Button>
-          </form>
+            </p>
+            <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary text-[24px] rounded-[8px] font-semibold'>
+                Comming Soon
+              </button>
+          </div>
+          <div>
+            <figure>
+              <img
+                src='/images/metacitti.svg'
+                alt='bloom illustt'
+                draggable={false}
+                className=''
+              />
+            </figure>
+          </div>
         </div>
       </div>
     </section>
