@@ -19,9 +19,7 @@ export default function Home() {
 }
 
 const Hero = () => {
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
+
   return (
     <>
       <section className='px-[20px] pt-[69px] pb-[81px] lg:pl-[160px] lg:pb-[195px] lg:pt-[72px] bg-[url(/images/hero.png)] bg-hero bg-no-repeat relative'>
@@ -51,22 +49,33 @@ const Hero = () => {
           <p className='text-tet font-normal text-[20px] lg:leading-[42px] lg:text-[28px] max-w-[442px] mt-10'>
             Be one of the first to receive our newest updates.
           </p>
-          <form
-            onSubmit={handleSubmit}
-            className='flex flex-col lg:flex-row gap-[14px] mt-4'
-          >
-            <fieldset>
-              <Input placeholder='Type your email here' type='email' />
-            </fieldset>
-            <Button className='rounded-[8px] px-[26px] py-[16px] lg:py-4 max-w-max'>
-              Join now !!
-            </Button>
-          </form>
+          <Form />
         </div>
       </section>
     </>
   );
 };
+
+const Form = () => {
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className='flex flex-col lg:flex-row gap-[14px] mt-4'
+    >
+      <fieldset>
+        <Input placeholder='Type your email here' type='email' />
+      </fieldset>
+      <Button className='rounded-[8px] px-[26px] py-[16px] lg:py-4 max-w-max'>
+        Join now !!
+      </Button>
+    </form>
+  )
+}
 
 function VideoSection() {
   return (
@@ -94,9 +103,7 @@ function VideoSection() {
 }
 
 function Ecosystem() {
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
+
   return (
     <section className='px-[20px] py-[40px] lg:px-[160px] lg:py-[120px]'>
       <h3 className='text-secondary text-[32px] leading-[44.8px] font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
@@ -107,7 +114,7 @@ function Ecosystem() {
         boundless, and economic prosperity is within reach for everyone.
       </p>
       <div className='grid gap-[60px]'>
-        {/* <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[22px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
+        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[22px] lg:pt-[107px] lg:pb-[115px] flex flex-col lg:flex-row items-center lg:mt-[60px] gap-[23px] lg:gap-[133px] '>
           <div>
             <figure>
               <img
@@ -127,7 +134,7 @@ function Ecosystem() {
                 className=''
               />
             </figure>
-            <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
+            <p className='text-[#A1A1AA] leading-[30px] lg:leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
               Immerse yourself in the ever-evolving landscape of emerging
               technologies through curated trainings, news updates and insightful
               market research.
@@ -135,20 +142,10 @@ function Ecosystem() {
             <p className='text-normal leading-[42px] max-qw-'>
               Be one of the pioneers to receive our newest updates.
             </p>
-            <form
-              onSubmit={handleSubmit}
-              className='flex flex-row gap-[14px] items-center mt-4'
-            >
-              <fieldset>
-                <Input placeholder='Type your email here' type='email' />
-              </fieldset>
-              <Button className=' whitespace-nowrap rounded-[8px] lg:px-[26px] lg:py-4'>
-                subscribe
-              </Button>
-            </form>
+            <Form />
           </div>
         </div>
-        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
+        <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:pt-[107px] lg:pb-[115px] flex flex-col lg:flex-row items-center lg:mt-[60px] gap-[20px] lg:gap-[133px] '>
           <div>
             <figure>
               <img
@@ -162,7 +159,7 @@ function Ecosystem() {
           <div>
             <figure>
               <img
-                src='/images/bloom.png'
+                src='/images/nifty-logo.svg'
                 alt='bloom logo'
                 draggable={false}
                 className=''
@@ -173,31 +170,23 @@ function Ecosystem() {
               technologies through curated trainings, news updates and insightful
               market research.
             </p>
-            <p className='text-normal leading-[42px] max-qw-'>
+            <p className='text-normal leading-[30px] lg:leading-[42px] pb-2'>
               Be one of the pioneers to receive our newest updates.
             </p>
-            <form
-              onSubmit={handleSubmit}
-              className='flex flex-row gap-[14px] items-center mt-4'
-            >
-              <fieldset>
-                <Input placeholder='Type your email here' type='email' />
-              </fieldset>
-              <Button className=' whitespace-nowrap rounded-[8px] lg:px-[26px] lg:py-4'>
-                subscribe
-              </Button>
-            </form>
+            <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary lg:text-[24px] rounded-[8px] font-semibold'>
+              More info
+            </button>
           </div>
-        </div> */}
+        </div>
         <div className='rounded-[12px] border-solid border border-white px-[20px] lg:px-[80px] py-[20px] lg:py-[128px] flex flex-col lg:flex-row lg:items-center gap-[23px] lg:gap-[133px]'>
           <div>
-           <h1 className='text-[#FFD92D] font-bold text-[32px] lg:text-[48px] mb-[20px]'>METACITTI</h1>
+            <h1 className='text-[#FFD92D] font-bold text-[32px] lg:text-[48px] mb-[20px]'>METACITTI</h1>
             <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] mb-[30px]'>
-            Be one of the pioneers to receive our newest updates.
+              Be one of the pioneers to receive our newest updates.
             </p>
             <button className='px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-[#FFD92D] text-primary lg:text-[24px] rounded-[8px] font-semibold'>
-                Comming Soon
-              </button>
+              Comming Soon
+            </button>
           </div>
           <div className='order-first lg:order-last'>
             <figure>
