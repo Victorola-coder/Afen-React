@@ -70,8 +70,8 @@ const Hero = () => {
 
 function VideoSection() {
   return (
-    <section className='bg-white lg:px-[100px] lg:flex lg:flex-row lg:gap-[106px] lg:lg:py-[120px]'>
-      <div className='bg-[#C4C4C4] w-[702px] h-[496px]'>
+    <section className='bg-white flex flex-col px-[21px] py-[20px] lg:px-[100px] lg:flex lg:flex-row lg:gap-[106px] lg:lg:py-[120px]'>
+      <div className='bg-[#C4C4C4] w-[353px] h-[210px] lg:w-[702px] lg:h-[496px]'>
         <iframe
           src='https://drive.google.com/file/d/17_Llv1rsba88-XIwTNi90APKwlUj-_Tm/preview'
           width='100%'
@@ -79,14 +79,14 @@ function VideoSection() {
           allow='autoplay'
         ></iframe>
       </div>
-      <div className='pr-[05px]'>
-        <h3 className='text-primary font-[850] text-[64px] font-coc lg:leading-[89.6px] uppercase  '>
+      <div className='pr-0 lg:pr-[5px]'>
+        <h3 className='text-primary font-[850] text-[32px] leading-[44.8px] lg:text-[64px] font-coc lg:leading-[89.6px] uppercase mt-5 '>
           About AFEN
         </h3>
-        <p className='text-grey font-normal font-sat lg:text-[24px] lg:max-w-[604px] lg:leading-[36px]'>
+        <p className='text-grey font-normal font-sat text-[20px] max-w-[353px] md:text-[24px] md:max-w-[604px] lg:leading-[36px]'>
           At AFEN Blockchain Network, we lead the charge in bringing Blockchain
           technology to the forefront of innovation in Africa and beyond.
-          <p className='mt-20'>
+          <p className='mt-5 md:mt-[10] lg:mt-20'>
             Our journey started with a mission to spread awareness of
             Blockchain&rsquo;s potential, and today, we stand as a dynamic
             launchpad for cutting-edge technologies, pushing the boundaries of
@@ -103,15 +103,15 @@ function Ecosystem() {
     e.preventDefault();
   }
   return (
-    <section className='px-[160px] py-[120px]'>
-      <h3 className='text-secondary lg:font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
+    <section className='px-[20px] py-[40px] lg:px-[160px] lg:py-[120px]'>
+      <h3 className='text-secondary text-[32px] leading-[44.8px] font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
         AFEN Ecosystem
       </h3>
-      <p className='font-normal text-white leading-[48px] text-[32px] font-sat  lg:max-w-[1194px]'>
+      <p className='font-normal text-white text-[20px] max-w-[353px] leading-[30px] lg:leading-[48px] md:text-[32px] font-sat  lg:max-w-[1194px]'>
         Envision a future where technology transforms lives, innovation is
         boundless, and economic prosperity is within reach for everyone.
       </p>
-      <div className='rounded-[12px] border-solid border border-white lg:pr-[91px] lg:pl-[103px] lg:pt-[107px] lg:pb-[115px] flex flex-row items-center  lg:mt-[60px] lg:gap-[133px] '>
+      <div className='flex flex-col mt-[20px] rounded-[12px] border-solid border border-white pt-[28px] px-[20px] lg:px-0 lg:pr-[91px] lg:pl-[103px] lg:pt-[107px] lg:pb-[115px] lg:flex lg:flex-row lg:items-center  lg:mt-[60px] lg:gap-[133px] '>
         <div>
           <figure>
             <img
@@ -128,25 +128,25 @@ function Ecosystem() {
               src='/images/bloom.png'
               alt='bloom logo'
               draggable={false}
-              className=''
+              className='w-[242px] mt-[30px] md:mt-0 md:w-[366px]'
             />
           </figure>
-          <p className='text-[#A1A1AA] leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
+          <p className='text-[#A1A1AA] leading-[30px] text-[20px] max-w-[311px] lg:leading-[42px] font-normal lg:mt-4 lg:text-[28px] font-sat lg:max-w-[613px] '>
             Immerse yourself in the ever-evolving landscape of emerging
             technologies through curated trainings, news updates and insightful
             market research.
           </p>
-          <p className='text-normal leading-[42px] max-qw-'>
+          <p className='text-normal max-w-[313px] leading-[30px] text-[20px] lg:leading-[42px] lg:max-w-[392px] lg:text-[28px] font-sat text-tet'>
             Be one of the pioneers to receive our newest updates.
           </p>
           <form
             onSubmit={handleSubmit}
-            className='flex flex-row gap-[14px] items-center mt-4'
+            className='flex flex-col items-start lg:flex lg:flex-row gap-[14px] lg:items-center mt-4'
           >
             <fieldset>
               <Input placeholder='Type your email here' type='email' />
             </fieldset>
-            <Button className=' whitespace-nowrap rounded-[8px] lg:px-[26px] lg:py-4'>
+            <Button className='font-medium rounded-[8px] font-sat !w-[127px] lg:!w-[171px] px-[26px] py-4'>
               subscribe
             </Button>
           </form>
@@ -161,11 +161,15 @@ const AfenToken = () => {
     <div className='bg-white'>
       <section className='w-full px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
         <figure>
-          <img src='/images/afentoken.svg' alt='' className='w-full' />
+          <img
+            src='/images/afentoken.svg'
+            alt=''
+            className='w-[353px] lg:w-full '
+          />
         </figure>
         <div className='flex'>
-          <div className='my-auto flex flex-col gap-[24px]'>
-            <h1 className='text-primary font-extrabold text-[40px]'>
+          <div className='my-auto flex flex-col lg:gap-[24px]'>
+            <h1 className='text-primary font-extrabold text-[32px] lg:text-[40px]'>
               $AFEN TOKEN
             </h1>
             <p className='text-[28px] leading-[42px] text-grey'>
@@ -177,7 +181,7 @@ const AfenToken = () => {
               <button className='whitespace-nowrap  px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
                 Trade $AFEN
               </button>
-              <button className=' whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
                 Stake $AFEN - Coming Soon
               </button>
             </div>
