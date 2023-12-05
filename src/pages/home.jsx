@@ -78,10 +78,10 @@ function VideoSection() {
         <h3 className='text-primary font-[850] text-[32px] lg:text-[64px] font-coc lg:leading-[89.6px] uppercase  '>
           About AFEN
         </h3>
-        <p className='text-grey font-normal font-sat lg:text-[24px] lg:max-w-[604px] lg:leading-[36px]'>
+        <p className='text-grey font-normal font-sat text-[20px] max-w-[353px] md:text-[24px] md:max-w-[604px] lg:leading-[36px]'>
           At AFEN Blockchain Network, we lead the charge in bringing Blockchain
           technology to the forefront of innovation in Africa and beyond.
-          <p className='mt-20'>
+          <p className='mt-5 md:mt-[10] lg:mt-20'>
             Our journey started with a mission to spread awareness of
             Blockchain&rsquo;s potential, and today, we stand as a dynamic
             launchpad for cutting-edge technologies, pushing the boundaries of
@@ -98,11 +98,11 @@ function Ecosystem() {
     e.preventDefault();
   }
   return (
-    <section className='px-[160px] py-[120px]'>
-      <h3 className='text-secondary lg:font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
+    <section className='px-[20px] py-[40px] lg:px-[160px] lg:py-[120px]'>
+      <h3 className='text-secondary text-[32px] leading-[44.8px] font-[850] font-coc uppercase lg:leading-[89.6px] lg:text-[64px] '>
         AFEN Ecosystem
       </h3>
-      <p className='font-normal text-white leading-[48px] text-[32px] font-sat  lg:max-w-[1194px]'>
+      <p className='font-normal text-white text-[20px] max-w-[353px] leading-[30px] lg:leading-[48px] md:text-[32px] font-sat  lg:max-w-[1194px]'>
         Envision a future where technology transforms lives, innovation is
         boundless, and economic prosperity is within reach for everyone.
       </p>
@@ -220,11 +220,15 @@ const AfenToken = () => {
     <div className='bg-white'>
       <section className='w-full px-[20px] lg:px-[160px] py-[120px] max-w-max mx-auto grid lg:grid-cols-2 gap-[121px]'>
         <figure>
-          <img src='/images/afentoken.svg' alt='' className='w-full' />
+          <img
+            src='/images/afentoken.svg'
+            alt=''
+            className='w-[353px] lg:w-full '
+          />
         </figure>
         <div className='flex'>
-          <div className='my-auto flex flex-col gap-[24px]'>
-            <h1 className='text-primary font-extrabold text-[40px]'>
+          <div className='my-auto flex flex-col lg:gap-[24px]'>
+            <h1 className='text-primary font-extrabold text-[32px] lg:text-[40px]'>
               $AFEN TOKEN
             </h1>
             <p className='text-[28px] leading-[42px] text-grey'>
@@ -233,10 +237,10 @@ const AfenToken = () => {
               chance to stake and earn rewards.
             </p>
             <div className='flex gap-[16px]'>
-              <button className='whitespace-nowrap  px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] bg-primary text-white text-[24px] rounded-[8px]'>
                 Trade $AFEN
               </button>
-              <button className=' whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
+              <button className='whitespace-nowrap px-[32px] lg:px-[52px] py-[16px] lg:py-[20px] text-primary border-[1px] border-primary bg-white text-[24px] rounded-[8px]'>
                 Stake $AFEN - Coming Soon
               </button>
             </div>
@@ -286,7 +290,7 @@ const AfenLaunchPad = () => {
       </section>
     </div>
   );
-};
+}
 
 const Portfolio = () => {
   return (
@@ -353,8 +357,8 @@ const Portfolio = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 const Footer = () => {
   return (
@@ -387,4 +391,4 @@ const Footer = () => {
       </h3>
     </footer>
   );
-};
+}
